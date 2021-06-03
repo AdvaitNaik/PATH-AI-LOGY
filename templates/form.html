@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
+
+    <title>FORM</title>
+    <style>
+    body{
+      font-family: Prompt;
+    }
+    .col-md-7{
+      text-align: center;
+      font-size: 20px;
+    }
+    .question{
+      color: blue;
+    }
+    .btn-primary{
+      background-color: white;
+      margin-bottom: 50px;
+
+    }
+    </style>
+  </head>
+  <body>
+    <img src="{{url_for('static', filename='images/pathailogy.png')}}">
+    <br>
+    <h1 style="font-size: 36px; font-weight: bold;">Minimum data reporting form – for suspected and probable cases of COVID-19</h1>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-5">
+          <img src="{{url_for('static', filename='images/formimg.png')}}" style="height: 1000px">
+        </div>
+        <div class="col-md-7">
+          <p><b>Date of first symptom onset</b></p>
+          <input type="date"><br>
+          <input type="checkbox"><label>No Syptoms</label>
+          <input type="checkbox"><label>Unknown</label>
+          <br><br>
+          <p><b>Fever (≥38 °C) or history of fever</b></p>
+          <input type="radio"><label>Yes </label>
+          <input type="radio"><label>No</label>
+          <input type="radio"><label>Unknown</label>
+          <br><br>
+          <p><b>Sore Throat</b></p>
+          <input type="radio"><label>Yes </label>
+          <input type="radio"><label>No</label>
+          <input type="radio"><label>Unknown</label>
+          <br><br>
+          <p><b>Runny Nose</b></p>
+          <input type="radio"><label>Yes </label>
+          <input type="radio"><label>No</label>
+          <input type="radio"><label>Unknown</label>
+          <br><br>
+          <p><b>Cough</b></p>
+          <input type="radio"><label>Yes </label>
+          <input type="radio"><label>No</label>
+          <input type="radio"><label>Unknown</label>
+          <br><br>
+          <p><b>Shortness of Breath</b></p>
+          <input type="radio"><label>Yes </label>
+          <input type="radio"><label>No</label>
+          <input type="radio"><label>Unknown</label>
+          <br><br>
+          <p><b>Nausea</b></p>
+          <input type="radio"><label>Yes </label>
+          <input type="radio"><label>No</label>
+          <input type="radio"><label>Unknown</label>
+          <br><br>
+          <p><b>Diarhhea</b></p>
+          <input type="radio"><label>Yes </label>
+          <input type="radio"><label>No</label>
+          <input type="radio"><label>Unknown</label><br><br>
+          <p class="question"><b>Has chest X Ray been submitted</b></p>
+          <input type="radio"><label>Yes </label>
+          <input type="radio"><label>No</label><br>
+          <button class="btn btn-primary" ><a href = "{{url_for('covid') }}">SUBMIT</a></button>
+          <br>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>

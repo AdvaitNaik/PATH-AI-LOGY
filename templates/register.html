@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
+    <title>REGISTRATION</title>
+    <style type="text/css">
+      *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body{
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+       background-image: linear-gradient(to left top, #003078, #00328e, #0033a3, #0033b8, #0031cc);
+      }
+      .row{
+        border-radius: 30px;
+        margin-top: 120px;
+        background: white;
+        }      
+      img.img-fluid{
+        margin:0;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+      }
+      h2{
+        font-family: Prompt;
+      }
+      .btn1{
+        border: none;
+        outline: none;
+        background-color: lightblue;
+        height: 50px;
+        width:100%;
+        color: white;
+        font-weight: bold;
+      }
+      .btn1:hover{
+        background: white;
+        border: 1px solid;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    
+
+   <section class="Form my-4 mx-5">
+      <div class="container">
+        <div class="row no-gutters">
+          <div class="col-lg-5">
+            <img src="{{url_for('static', filename='images/loginimg.png')}}" class="img-fluid">
+          </div>
+          <div class="col-lg-7 px-5 pt-5">
+           <h2> PATH-AI-LOGY </h2>
+            <form>
+              <div class="form-row">
+                <div class=col-lg-7>
+                  <input type="Name" placeholder="Full name" class="form-control my- p-4">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class=col-lg-7>
+                  <input type="email" placeholder="Email-address" class="form-control my-2 p-4">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class=col-lg-7>
+                  <input type="password" placeholder="Password" class="form-control my-2 p-4">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class=col-lg-7>
+                  <input type="password" placeholder="Confirm Password" class="form-control my-2 p-4">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class=col-lg-7>
+                  <button type="button" class="btn1" ><a href="{{url_for('index') }}">REGISTER</a></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+   </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>

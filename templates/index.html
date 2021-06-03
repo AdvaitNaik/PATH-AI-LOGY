@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
+    <title>Welcome</title>
+<meta name="viewport" content="width=device-width, initial-scale=2.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
+
+<style>
+body {
+	background-image: url('bg1.jpg');
+	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: cover;
+	margin: 0;
+}
+.header{
+	font-family: Prompt;
+}
+ul.topnav {
+	font-family: Prompt;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  }
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+	height: 40px;
+	font-family: Prompt;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-left:  6px solid blue;
+}
+
+.text1{
+	text-align: center;
+	font-family: Prompt;
+	font-size: 48px;
+	color: white;
+
+}
+.container{
+	align-items: center;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  align-items: center;
+}
+
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid black;
+}
+
+.button1:hover {
+  background-color: lightblue;
+  color: white;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid black;
+}
+
+.button2:hover {
+  background-color: lightblue;
+  color: white;
+}
+ul.topnav li a:hover:not(.active) {background-color: blue;}
+
+ul.topnav li a.active {background-color: blue;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+</style>
+</head>
+<body style="background-image:url( {{url_for('static', filename='images/bg1.jpg')}} );background-repeat: no-repeat;background-attachment: fixed;background-size: cover;">
+<div class="header">
+	<img src="{{url_for('static', filename='images/pathailogy.png')}}" style=" margin-left: 10px">
+	<p style="color:#008CBA;margin-left:50px"> HEALTHCARE USING AI </p>
+</div>
+<ul class="topnav">
+  <li><a href="#home">HOME</a></li>
+  <li><a href="optional"> HEALTH IT </a></li>
+  <li><a href="#option2 "> RESOURCES </a></li>
+  <li class="right" ><a href="{{url_for('login') }}">LOGIN</a></li>
+  <li class="right"><a href="{{url_for('register') }}">REGISTER</a></li>
+</ul>
+
+<div class="text1">
+	<br>
+  	  WELCOME TO PATH-AI-LOGY <br>
+      CHOOSE AN OPTION
+</div>
+<br>
+<div class="container">
+  <div class="row" align="right">
+    <div class="col-md-6 px-20 py-5">
+      <button class="button button1"><a href="{{url_for('form') }}">COVID19</a></button>
+    </div>
+  <div class="row">
+     <div class="col-md-6 px-20 py-5" >
+      <button class="button button2"><a href="{{url_for('pneumonia') }}">PNEUMONIA</a></button>
+   </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  
+</body>
+</html>
